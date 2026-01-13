@@ -1,10 +1,39 @@
 <!DOCTYPE html><html lang="nl"><head>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://domain.com/#website",
+      "url": "https://domain.com",
+      "name": "domain"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://domain.com/#org",
+      "name": "domain",
+      "url": "https://domain.com"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://domain.com/services.html",
+      "url": "https://domain.com/services.html",
+      "name": "domain",
+      "isPartOf": {
+        "@id": "https://domain.com/#website"
+      },
+      "inLanguage": "nl"
+    }
+  ]
+}
+</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Onze Diensten - Northlight Innovations | Premium Reisdiensten in Zweden</title>
-  <meta name="description" content="Ontdek onze uitgebreide reisdiensten bij Northlight Innovations. Van gepersonaliseerde reisplanning tot exclusieve tourbegeleiding - uw droomreis begint hier.">
-  <meta property="og:title" content="Onze Diensten - Northlight Innovations">
-  <meta property="og:description" content="Ontdek onze uitgebreide reisdiensten bij Northlight Innovations. Van gepersonaliseerde reisplanning tot exclusieve tourbegeleiding - uw droomreis begint hier.">
+  <title>domain - domain Innovations | Premium Reisdiensten in Zweden</title>
+  <meta name="description" content="domain onze uitgebreide reisdiensten bij domain Innovations. Van gepersonaliseerde reisplanning tot exclusieve tourbegeleiding - uw droomreis begint hier.">
+  <meta property="og:title" content="domain Diensten - domain Innovations">
+  <meta property="og:description" content="domain onze uitgebreide reisdiensten bij domain Innovations. Van gepersonaliseerde reisplanning tot exclusieve tourbegeleiding - uw droomreis begint hier.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://domain.com/services.html">
   <meta property="og:image" content="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&amp;h=630&amp;fit=crop">
@@ -12,30 +41,40 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
- </head>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<link rel="stylesheet" href="./header-footer.css">
+</head>
  <body>
-  <header class="l-header">
-   <div class="l-container">
-    <div class="l-header__inner">
-     <div class="c-logo">
-      <a href="/" aria-label="Reiservaring Premium Homepage"> <img class="c-logo__img" src="img/albuquerque-cityscape-logo-hot-air-balloons-mountains-and-sunrise.jpg" alt="Reiservaring Premium logo, travel, adventure, Netherlands" width="150" height="40" loading="eager"> </a>
-     </div>
-     <nav class="c-nav" id="main-nav" aria-label="Hoofdnavigatie">
-      <button class="c-nav__toggle" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Menu openen"><span class="c-nav__toggle-icon">☰</span></button>
-      <ul class="c-nav__list">
-       <li class="c-nav__item"><a class="c-nav__link is-active" href="/" aria-current="page">Home</a></li>
-       <li class="c-nav__item"><a class="c-nav__link" href="/about.html">Over Ons</a></li>
-       <li class="c-nav__item"><a class="c-nav__link" href="/services.html">Diensten</a></li>
-       <li class="c-nav__item"><a class="c-nav__link" href="/careers.html">Carrière</a></li>
-       <li class="c-nav__item"><a class="c-nav__link c-nav__link--cta" href="#contact-form">Contact</a></li>
-      </ul>
-     </nav>
+  <header class="dr-header" aria-label="Main">
+  <div class="dr-header-inner">
+    <div class="dr-header-main">
+      <div class="dr-header-brand">
+        <div class="dr-logo-wrap" aria-label="domain logo">
+          <img class="dr-logo-img" src="img/albuquerque-cityscape-logo-hot-air-balloons-mountains-and-sunrise.jpg" alt="Reiservaring Premium logo, travel, adventure, Netherlands" width="150" height="40" loading="lazy" />
+        </div>
+        <div class="dr-brand-text">domain</div>
+      </div>
+      <button class="dr-nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="dr-nav-toggle-box" aria-hidden="true">
+          <span class="dr-nav-toggle-line dr-nav-toggle-line-1"></span>
+          <span class="dr-nav-toggle-line dr-nav-toggle-line-2"></span>
+        </span>
+      </button>
+      <nav class="dr-nav" aria-label="Primary">
+        <ul class="dr-nav-list">
+          <li class="dr-nav-item"><a class="dr-nav-link" href="./index.html">Home</a></li>
+          <li class="dr-nav-item"><a class="dr-nav-link" href="./about.html">About</a></li>
+          <li class="dr-nav-item"><a class="dr-nav-link" href="./careers.html">Careers</a></li>
+          <li class="dr-nav-item"><a class="dr-nav-link" href="./services.html">Services</a></li>
+        </ul>
+      </nav>
     </div>
-   </div>
-  </header>
+  </div>
+</header>
   <main>
    <section class="c-hero c-hero--services" style="background-image: linear-gradient(rgba(37, 99, 235, 0.75), rgba(139, 92, 246, 0.65)), url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1920&amp;h=800&amp;fit=crop'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-    <div class="l-container">
+    <div class="container">
      <div class="c-hero__content" data-aos="fade-up" data-aos-duration="800">
       <nav aria-label="Breadcrumb">
        <ol class="breadcrumb">
@@ -43,13 +82,13 @@
         <li class="breadcrumb-item active" aria-current="page">Diensten</li>
        </ol>
       </nav>
-      <h1 class="c-hero__title">Onze Diensten</h1>
+      <h1 class="c-hero__title">domain Diensten</h1>
       <p class="c-hero__subtitle">Gespecialiseerde reisoplossingen voor onvergetelijke Scandinavische avonturen</p>
      </div>
     </div>
    </section>
    <section class="l-section" id="services-overview">
-    <div class="l-container">
+    <div class="container">
      <div class="c-section-header" data-aos="fade-up">
       <h2 class="c-section-header__title">Bekroonde Reisdiensten</h2>
       <p class="c-section-header__description">Wij bieden een uitgebreid scala aan premium diensten die zijn afgestemd op uw unieke reiswensen. Van het allereerste idee tot het moment dat u thuiskomt met prachtige herinneringen.</p>
@@ -63,7 +102,7 @@
        </div>
        <div class="c-card__body">
         <h3 class="c-card__title">Gepersonaliseerde Reisplanning</h3>
-        <p class="c-card__description">Onze ervaren reisplanners creëren volledig op maat gemaakte routes die perfect aansluiten bij uw interesses, budget en tijdschema. Van verborgen juweeltjes tot iconische bezienswaardigheden.</p>
+        <p class="c-card__description">domain ervaren reisplanners creëren volledig op maat gemaakte routes die perfect aansluiten bij uw interesses, budget en tijdschema. Van verborgen juweeltjes tot iconische bezienswaardigheden.</p>
         <ul class="c-card__features">
          <li>Eén-op-één consultaties</li>
          <li>Gedetailleerde dagprogramma's</li>
@@ -75,12 +114,12 @@
       <article class="c-card c-service-card" data-aos="fade-up" data-aos-delay="200">
        <div class="c-card__icon-wrapper ratio ratio-1x1">
         <svg class="c-card__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-         <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path> <circle cx="9" cy="7" r="4"></circle> <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path> <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+         <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path> <circle cx="9" cy="7" r="4"></circle> <path d="M23 21v-2a4 +31 (0)70 7443029"></path> <path d="M16 3.13a4 070-411-4520"></path>
         </svg>
        </div>
        <div class="c-card__body">
         <h3 class="c-card__title">Exclusieve Tourbegeleiding</h3>
-        <p class="c-card__description">Ontdek Scandinavië met onze deskundige gidsen die plaatselijke geschiedenis, cultuur en verborgen verhalen tot leven brengen. Kleine groepen voor een persoonlijke ervaring.</p>
+        <p class="c-card__description">domain Scandinavië met onze deskundige gidsen die plaatselijke geschiedenis, cultuur en verborgen verhalen tot leven brengen. Kleine groepen voor een persoonlijke ervaring.</p>
         <ul class="c-card__features">
          <li>Meertalige professionele gidsen</li>
          <li>Privé en groepsopties</li>
@@ -92,7 +131,7 @@
       <article class="c-card c-service-card" data-aos="fade-up" data-aos-delay="300">
        <div class="c-card__icon-wrapper ratio ratio-1x1">
         <svg class="c-card__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-         <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path> <polyline points="9 22 9 12 15 12 15 22"></polyline>
+         <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path> <polyline points="+31 70 5213782"></polyline>
         </svg>
        </div>
        <div class="c-card__body">
@@ -143,7 +182,7 @@
       <article class="c-card c-service-card" data-aos="fade-up" data-aos-delay="300">
        <div class="c-card__icon-wrapper ratio ratio-1x1">
         <svg class="c-card__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-         <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon> <polyline points="2 17 12 22 22 17"></polyline> <polyline points="2 12 12 17 22 12"></polyline>
+         <polygon points="+31 (0)70 7443029"></polygon> <polyline points="070-411-4520"></polyline> <polyline points="+31 70 5213782"></polyline>
         </svg>
        </div>
        <div class="c-card__body">
@@ -161,10 +200,10 @@
     </div>
    </section>
    <section class="l-section c-section--team-expertise" style="background-color: var(--color-bg-secondary);">
-    <div class="l-container">
+    <div class="container">
      <div class="c-section-header" data-aos="fade-up">
-      <h2 class="c-section-header__title">Expertise van Ons Team</h2>
-      <p class="c-section-header__description">Ons toegewijde team van reisspecialisten combineert jarenlange ervaring met een passie voor Scandinavië om ongeëvenaarde service te leveren.</p>
+      <h2 class="c-section-header__title">Expertise van domain Team</h2>
+      <p class="c-section-header__description">domain toegewijde team van reisspecialisten combineert jarenlange ervaring met een passie voor Scandinavië om ongeëvenaarde service te leveren.</p>
      </div>
      <div class="l-grid l-grid--4-col">
       <article class="c-card c-card--team" data-aos="fade-up" data-aos-delay="100">
@@ -211,9 +250,9 @@
     </div>
    </section>
    <section class="l-section" id="service-maps">
-    <div class="l-container">
+    <div class="container">
      <div class="c-section-header" data-aos="fade-up">
-      <h2 class="c-section-header__title">Onze Service Gebieden</h2>
+      <h2 class="c-section-header__title">domain Service Gebieden</h2>
       <p class="c-section-header__description">Wij bieden onze premium diensten door heel Scandinavië met een speciale focus op Zweden.</p>
      </div>
      <div class="c-service-map" data-aos="fade-up" data-aos-delay="100">
@@ -236,9 +275,9 @@
     </div>
    </section>
    <section class="l-section c-section--testimonials" style="background-color: var(--color-bg-secondary);">
-    <div class="l-container">
+    <div class="container">
      <div class="c-section-header" data-aos="fade-up">
-      <h2 class="c-section-header__title">Wat Onze Klanten Zeggen</h2>
+      <h2 class="c-section-header__title">Wat domain Klanten Zeggen</h2>
       <p class="c-section-header__description">Echte verhalen van reizigers die onvergetelijke ervaringen hebben gehad met onze diensten.</p>
      </div>
      <div class="l-grid l-grid--3-col">
@@ -262,11 +301,44 @@
          </svg>
         </div>
         <blockquote class="c-card__quote">
-         <p>"De gepersonaliseerde reisplanning van Northlight Innovations maakte onze Zweedse vakantie absoluut perfect. Emma begreep precies wat we zochten en creëerde een ervaring die onze verwachtingen overtrof. Elke dag was vol met verrassingen en prachtige momenten."</p>
+         <p>"De gepersonaliseerde reisplanning van domain Innovations maakte onze Zweedse vakantie absoluut perfect. Emma begreep precies wat we zochten en creëerde een ervaring die onze verwachtingen overtrof. Elke dag was vol met verrassingen en prachtige momenten."</p>
         </blockquote>
-        <footer class="c-card__author">
-         <cite class="c-card__name">Maria van den Berg</cite> <span class="c-card__location">Amsterdam, Nederland</span>
-        </footer>
+        <footer class="dr-footer" aria-label="Footer">
+  <div class="dr-footer-inner">
+    <div class="dr-footer-top">
+      <div class="dr-footer-brand-block">
+        <div class="dr-footer-brand">domain</div>
+        <p class="dr-footer-disclaimer">
+          The information provided on domain.com is for general informational purposes only and does not constitute professional, legal, financial, or investment advice. domain makes no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the content or services on domain.com. Any reliance you place on such information is strictly at your own risk. domain reserves the right to modify, update, or discontinue content or services on domain.com at any time without prior notice.
+        </p>
+      </div>
+      <div class="dr-footer-nav-blocks">
+        <nav class="dr-footer-nav" aria-label="Footer main navigation">
+          <h2 class="dr-footer-heading">Navigate</h2>
+          <ul class="dr-footer-nav-list">
+            <li class="dr-footer-nav-item"><a class="dr-footer-nav-link" href="./index.html">Home</a></li>
+            <li class="dr-footer-nav-item"><a class="dr-footer-nav-link" href="./about.html">About</a></li>
+            <li class="dr-footer-nav-item"><a class="dr-footer-nav-link" href="./careers.html">Careers</a></li>
+            <li class="dr-footer-nav-item"><a class="dr-footer-nav-link" href="./services.html">Services</a></li>
+          </ul>
+        </nav>
+        <nav class="dr-footer-legal" aria-label="Legal">
+          <h2 class="dr-footer-heading">Legal</h2>
+          <ul class="dr-footer-legal-list">
+            <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./cookie_policy.html">Cookie Policy</a></li>
+            <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./privacy.html">Privacy</a></li>
+            <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./services.html">Services</a></li>
+            <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./terms_and_conditions.html">Terms And Conditions</a></li>
+            <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./terms_of_services.html">Terms Of Services</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="dr-footer-bottom">
+      <p class="dr-footer-meta">© <span class="dr-footer-meta-brand">domain</span> — All rights reserved.</p>
+    </div>
+  </div>
+</footer>
        </div>
       </article>
       <article class="c-card c-card--testimonial" data-aos="fade-up" data-aos-delay="200">
@@ -327,32 +399,32 @@
     </div>
    </section>
    <section class="l-section c-section--cta" style="background-image: linear-gradient(rgba(37, 99, 235, 0.9), rgba(139, 92, 246, 0.85)), url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1920&amp;h=600&amp;fit=crop'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-    <div class="l-container">
+    <div class="container">
      <div class="c-cta" data-aos="fade-up">
       <h2 class="c-cta__title">Begin Uw Scandinavisch Avontuur</h2>
       <p class="c-cta__description">Neem vandaag nog contact op met ons team om uw droomreis te plannen. Wij staan klaar om al uw vragen te beantwoorden en u te helpen met het creëren van een onvergetelijke ervaring.</p>
       <div class="c-cta__actions">
-       <a href="/#contact" class="c-button c-button--secondary">Neem Contact Op</a> <a href="/about.html" class="c-button c-button--ghost">Meer Over Ons</a>
+       <a href="/#contact" class="c-button c-button--secondary">Neem Contact Op</a> <a href="/about.html" class="c-button c-button--ghost">Meer Over domain</a>
       </div>
      </div>
     </div>
    </section>
   </main>
   <footer class="l-footer">
-   <div class="l-container">
+   <div class="container">
     <div class="l-footer__top">
      <div class="l-footer__column">
       <div class="c-logo c-logo--footer">
        <img class="c-logo__img" src="img/vliegtuig-reizen-logo-lijn-kunst-vector-illustratie-sjabloon-pictogram-grafis.jpg" alt="Reiservaring Premium logo" width="150" height="40" loading="lazy">
       </div>
-      <p class="l-footer__description">Uw betrouwbare partner voor onvergetelijke reiservaringen door Nederland en de wereld.</p>
+      <p class="l-footer__description">Uw domain partner voor onvergetelijke reiservaringen door Nederland en de wereld.</p>
      </div>
      <div class="l-footer__column">
       <h3 class="l-footer__heading">Snelle Links</h3>
       <nav class="c-nav c-nav--footer" aria-label="Footer navigatie">
        <ul class="c-nav__list c-nav__list--footer">
         <li class="c-nav__item"><a class="c-nav__link" href="/">Home</a></li>
-        <li class="c-nav__item"><a class="c-nav__link" href="/about.html">Over Ons</a></li>
+        <li class="c-nav__item"><a class="c-nav__link" href="/about.html">Over domain</a></li>
         <li class="c-nav__item"><a class="c-nav__link" href="/services.html">Diensten</a></li>
         <li class="c-nav__item"><a class="c-nav__link" href="/careers.html">Carrière</a></li>
        </ul>
@@ -363,21 +435,17 @@
       <nav class="c-nav c-nav--footer" aria-label="Juridische links">
        <ul class="c-nav__list c-nav__list--footer">
         <li class="c-nav__item"><a class="c-nav__link" href="/privacy.html">Privacyverklaring</a></li>
-        <li class="c-nav__item"><a class="c-nav__link" href="/terms_and_conditions.html">Algemene Voorwaarden</a></li>
-        <li class="c-nav__item"><a class="c-nav__link" href="/terms_of_services.html">Servicevoorwaarden</a></li>
+        <li class="c-nav__item"><a class="c-nav__link" href="/terms_and_conditions.html">domain Voorwaarden</a></li>
+        <li class="c-nav__item"><a class="c-nav__link" href="/terms_of_services.html">domain</a></li>
         <li class="c-nav__item"><a class="c-nav__link" href="/cookie_policy.html">Cookiebeleid</a></li>
        </ul>
       </nav>
      </div>
      <div class="l-footer__column">
       <h3 class="l-footer__heading">Contact</h3>
-      <address class="l-footer__address">
-       <p>Strandvägen 29
-        <br>
-        104 24 Stockholm, Zweden</p>
-       <p><a href="tel:+4685090400" class="l-footer__link">+46 8 5090 4000</a></p>
-       <p><a href="mailto:info@domain.com" class="l-footer__link">info@domain.com</a></p>
-      </address>
+      <address class="l-footer__address">The Hague Tower<br>
+Rijswijkseplein 786, Floor 9, Office 914<br>
+2516 LX Den Haag</address>
      </div>
     </div>
     <div class="l-footer__bottom">
@@ -387,4 +455,13 @@
   </footer>
   <script src="script.js" defer=""></script>
  
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+if (typeof AOS !== "undefined" && !window.__AOS_INITIALIZED__) {
+  AOS.init({ once: true, duration: 700, easing: "ease-out-cubic" });
+  window.__AOS_INITIALIZED__ = true;
+}
+</script>
+<script src="./header-footer.js"></script>
+<script src="./consent.js"></script>
 </body></html>

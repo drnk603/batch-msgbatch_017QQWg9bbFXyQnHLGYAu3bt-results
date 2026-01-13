@@ -1,4 +1,33 @@
 <!DOCTYPE html><html lang="nl"><head>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://domain.com/#website",
+      "url": "https://domain.com",
+      "name": "domain"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://domain.com/#org",
+      "name": "domain",
+      "url": "https://domain.com"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://domain.com/cookie_policy.html",
+      "url": "https://domain.com/cookie_policy.html",
+      "name": "domain",
+      "isPartOf": {
+        "@id": "https://domain.com/#website"
+      },
+      "inLanguage": "nl"
+    }
+  ]
+}
+</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Cookiebeleid van domain.com. Leer hoe wij cookies gebruiken om uw browse-ervaring te verbeteren en onze website te optimaliseren.">
@@ -11,30 +40,40 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
- </head>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<link rel="stylesheet" href="./header-footer.css">
+</head>
  <body>
-  <header class="l-header">
-   <div class="l-container">
-    <div class="l-header__inner">
-     <div class="c-logo">
-      <a href="/" aria-label="Reiservaring Premium Homepage"> <img class="c-logo__img" src="img/albuquerque-cityscape-logo-hot-air-balloons-mountains-and-sunrise.jpg" alt="Reiservaring Premium logo, travel, adventure, Netherlands" width="150" height="40" loading="eager"> </a>
-     </div>
-     <nav class="c-nav" id="main-nav" aria-label="Hoofdnavigatie">
-      <button class="c-nav__toggle" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Menu openen"><span class="c-nav__toggle-icon">☰</span></button>
-      <ul class="c-nav__list">
-       <li class="c-nav__item"><a class="c-nav__link is-active" href="/" aria-current="page">Home</a></li>
-       <li class="c-nav__item"><a class="c-nav__link" href="/about.html">Over Ons</a></li>
-       <li class="c-nav__item"><a class="c-nav__link" href="/services.html">Diensten</a></li>
-       <li class="c-nav__item"><a class="c-nav__link" href="/careers.html">Carrière</a></li>
-       <li class="c-nav__item"><a class="c-nav__link c-nav__link--cta" href="#contact-form">Contact</a></li>
-      </ul>
-     </nav>
+  <header class="dr-header" aria-label="Main">
+  <div class="dr-header-inner">
+    <div class="dr-header-main">
+      <div class="dr-header-brand">
+        <div class="dr-logo-wrap" aria-label="domain logo">
+          <img class="dr-logo-img" src="img/albuquerque-cityscape-logo-hot-air-balloons-mountains-and-sunrise.jpg" alt="Reiservaring Premium logo, travel, adventure, Netherlands" width="150" height="40" loading="lazy" />
+        </div>
+        <div class="dr-brand-text">domain</div>
+      </div>
+      <button class="dr-nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="dr-nav-toggle-box" aria-hidden="true">
+          <span class="dr-nav-toggle-line dr-nav-toggle-line-1"></span>
+          <span class="dr-nav-toggle-line dr-nav-toggle-line-2"></span>
+        </span>
+      </button>
+      <nav class="dr-nav" aria-label="Primary">
+        <ul class="dr-nav-list">
+          <li class="dr-nav-item"><a class="dr-nav-link" href="./index.html">Home</a></li>
+          <li class="dr-nav-item"><a class="dr-nav-link" href="./about.html">About</a></li>
+          <li class="dr-nav-item"><a class="dr-nav-link" href="./careers.html">Careers</a></li>
+          <li class="dr-nav-item"><a class="dr-nav-link" href="./services.html">Services</a></li>
+        </ul>
+      </nav>
     </div>
-   </div>
-  </header>
+  </div>
+</header>
   <main class="l-main">
    <nav class="l-breadcrumbs" aria-label="Broodkruimels">
-    <div class="l-container">
+    <div class="container">
      <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="/">Home</a></li>
       <li class="breadcrumb-item active" aria-current="page">Cookiebeleid</li>
@@ -42,7 +81,7 @@
     </div>
    </nav>
    <section class="l-section c-hero c-hero--policy" style="background-image: linear-gradient(rgba(94, 114, 155, 0.85), rgba(255, 218, 193, 0.75)), url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1600&amp;h=600&amp;fit=crop'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-    <div class="l-container">
+    <div class="container">
      <div class="c-hero__content" data-aos="fade-up">
       <h1 class="c-hero__title">Cookiebeleid</h1>
       <p class="c-hero__subtitle">Transparantie over hoe wij cookies gebruiken om uw ervaring te verbeteren</p>
@@ -51,7 +90,7 @@
     </div>
    </section>
    <section class="l-section py-5">
-    <div class="l-container">
+    <div class="container">
      <div class="row">
       <div class="col-12 col-lg-8 mx-auto">
        <article class="c-policy-content">
@@ -219,7 +258,7 @@
          <div class="c-policy-section__body">
           <p>Dit cookiebeleid is opgesteld in overeenstemming met:</p>
           <ul>
-           <li><strong>Algemene Verordening Gegevensbescherming (AVG):</strong> EU-verordening 2016/679</li>
+           <li><strong>domain Verordening Gegevensbescherming (AVG):</strong> EU-verordening 2016/679</li>
            <li><strong>ePrivacy-richtlijn:</strong> Richtlijn 2002/58/EG (herzien in 2009)</li>
            <li><strong>Telecommunicatiewet:</strong> Nederlandse implementatie van de ePrivacy-richtlijn</li>
           </ul>
@@ -230,18 +269,9 @@
          <h2 class="c-policy-section__title">10. Contact en vragen</h2>
          <div class="c-policy-section__body">
           <p>Als u vragen heeft over dit cookiebeleid of over hoe wij cookies gebruiken, neem dan contact met ons op:</p>
-          <address><strong>domain.com</strong>
-           <br>
-           Strandvägen 29
-           <br>
-           104 24 Stockholm
-           <br>
-           Zweden
-           <br>
-           <br>
-           <strong>E-mail:</strong> <a href="mailto:info@domain.com">info@domain.com</a>
-           <br>
-           <strong>Telefoon:</strong> <a href="tel:+46850904000">+46 8 5090 4000</a></address>
+          <address>The Hague Tower<br>
+Rijswijkseplein 786, Floor 9, Office 914<br>
+2516 LX Den Haag</address>
           <p>Voor meer informatie over hoe wij omgaan met uw persoonsgegevens, raadpleeg ons <a href="/privacy.html">Privacybeleid</a>.</p>
          </div>
         </div>
@@ -250,9 +280,9 @@
         <div class="c-card c-card--cta">
          <div class="c-card__body">
           <h3 class="c-card__title">Meer juridische informatie</h3>
-          <p class="c-card__text">Ontdek meer over uw rechten en onze verplichtingen:</p>
+          <p class="c-card__text">domain meer over uw rechten en onze verplichtingen:</p>
           <div class="c-card__actions">
-           <a href="/privacy.html" class="c-button c-button--secondary">Privacybeleid</a> <a href="/terms_and_conditions.html" class="c-button c-button--secondary">Algemene Voorwaarden</a> <a href="/terms_of_services.html" class="c-button c-button--secondary">Servicevoorwaarden</a>
+           <a href="/privacy.html" class="c-button c-button--secondary">Privacybeleid</a> <a href="/terms_and_conditions.html" class="c-button c-button--secondary">domain Voorwaarden</a> <a href="/terms_of_services.html" class="c-button c-button--secondary">domain</a>
           </div>
          </div>
         </div>
@@ -262,53 +292,51 @@
     </div>
    </section>
   </main>
-  <footer class="l-footer">
-   <div class="l-container">
-    <div class="l-footer__top">
-     <div class="l-footer__column">
-      <div class="c-logo c-logo--footer">
-       <img class="c-logo__img" src="img/vliegtuig-reizen-logo-lijn-kunst-vector-illustratie-sjabloon-pictogram-grafis.jpg" alt="Reiservaring Premium logo" width="150" height="40" loading="lazy">
+  <footer class="dr-footer" aria-label="Footer">
+  <div class="dr-footer-inner">
+    <div class="dr-footer-top">
+      <div class="dr-footer-brand-block">
+        <div class="dr-footer-brand">domain</div>
+        <p class="dr-footer-disclaimer">
+          The information provided on domain.com is for general informational purposes only and does not constitute professional, legal, financial, or investment advice. domain makes no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the content or services on domain.com. Any reliance you place on such information is strictly at your own risk. domain reserves the right to modify, update, or discontinue content or services on domain.com at any time without prior notice.
+        </p>
       </div>
-      <p class="l-footer__description">Uw betrouwbare partner voor onvergetelijke reiservaringen door Nederland en de wereld.</p>
-     </div>
-     <div class="l-footer__column">
-      <h3 class="l-footer__heading">Snelle Links</h3>
-      <nav class="c-nav c-nav--footer" aria-label="Footer navigatie">
-       <ul class="c-nav__list c-nav__list--footer">
-        <li class="c-nav__item"><a class="c-nav__link" href="/">Home</a></li>
-        <li class="c-nav__item"><a class="c-nav__link" href="/about.html">Over Ons</a></li>
-        <li class="c-nav__item"><a class="c-nav__link" href="/services.html">Diensten</a></li>
-        <li class="c-nav__item"><a class="c-nav__link" href="/careers.html">Carrière</a></li>
-       </ul>
-      </nav>
-     </div>
-     <div class="l-footer__column">
-      <h3 class="l-footer__heading">Juridisch</h3>
-      <nav class="c-nav c-nav--footer" aria-label="Juridische links">
-       <ul class="c-nav__list c-nav__list--footer">
-        <li class="c-nav__item"><a class="c-nav__link" href="/privacy.html">Privacyverklaring</a></li>
-        <li class="c-nav__item"><a class="c-nav__link" href="/terms_and_conditions.html">Algemene Voorwaarden</a></li>
-        <li class="c-nav__item"><a class="c-nav__link" href="/terms_of_services.html">Servicevoorwaarden</a></li>
-        <li class="c-nav__item"><a class="c-nav__link" href="/cookie_policy.html">Cookiebeleid</a></li>
-       </ul>
-      </nav>
-     </div>
-     <div class="l-footer__column">
-      <h3 class="l-footer__heading">Contact</h3>
-      <address class="l-footer__address">
-       <p>Strandvägen 29
-        <br>
-        104 24 Stockholm, Zweden</p>
-       <p><a href="tel:+4685090400" class="l-footer__link">+46 8 5090 4000</a></p>
-       <p><a href="mailto:info@domain.com" class="l-footer__link">info@domain.com</a></p>
-      </address>
-     </div>
+      <div class="dr-footer-nav-blocks">
+        <nav class="dr-footer-nav" aria-label="Footer main navigation">
+          <h2 class="dr-footer-heading">Navigate</h2>
+          <ul class="dr-footer-nav-list">
+            <li class="dr-footer-nav-item"><a class="dr-footer-nav-link" href="./index.html">Home</a></li>
+            <li class="dr-footer-nav-item"><a class="dr-footer-nav-link" href="./about.html">About</a></li>
+            <li class="dr-footer-nav-item"><a class="dr-footer-nav-link" href="./careers.html">Careers</a></li>
+            <li class="dr-footer-nav-item"><a class="dr-footer-nav-link" href="./services.html">Services</a></li>
+          </ul>
+        </nav>
+        <nav class="dr-footer-legal" aria-label="Legal">
+          <h2 class="dr-footer-heading">Legal</h2>
+          <ul class="dr-footer-legal-list">
+            <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./cookie_policy.html">Cookie Policy</a></li>
+            <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./privacy.html">Privacy</a></li>
+            <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./services.html">Services</a></li>
+            <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./terms_and_conditions.html">Terms And Conditions</a></li>
+            <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./terms_of_services.html">Terms Of Services</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
-    <div class="l-footer__bottom">
-     <p class="l-footer__copyright">© 2025 Reiservaring Premium. Alle rechten voorbehouden.</p>
+    <div class="dr-footer-bottom">
+      <p class="dr-footer-meta">© <span class="dr-footer-meta-brand">domain</span> — All rights reserved.</p>
     </div>
-   </div>
-  </footer>
+  </div>
+</footer>
   <script src="script.js" defer=""></script>
  
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+if (typeof AOS !== "undefined" && !window.__AOS_INITIALIZED__) {
+  AOS.init({ once: true, duration: 700, easing: "ease-out-cubic" });
+  window.__AOS_INITIALIZED__ = true;
+}
+</script>
+<script src="./header-footer.js"></script>
+<script src="./consent.js"></script>
 </body></html>

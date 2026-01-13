@@ -1,46 +1,85 @@
 <!DOCTYPE html><html lang="nl"><head>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://domain.com/#website",
+      "url": "https://domain.com",
+      "name": "domain"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://domain.com/#org",
+      "name": "domain",
+      "url": "https://domain.com"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://domain.com/privacy.html",
+      "url": "https://domain.com/privacy.html",
+      "name": "domain",
+      "isPartOf": {
+        "@id": "https://domain.com/#website"
+      },
+      "inLanguage": "nl"
+    }
+  ]
+}
+</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacybeleid | Northlight Innovations</title>
-  <meta name="description" content="Lees ons privacybeleid om te begrijpen hoe Northlight Innovations uw persoonlijke gegevens verzamelt, gebruikt en beschermt in overeenstemming met de AVG.">
-  <meta property="og:title" content="Privacybeleid | Northlight Innovations">
-  <meta property="og:description" content="Lees ons privacybeleid om te begrijpen hoe Northlight Innovations uw persoonlijke gegevens verzamelt, gebruikt en beschermt in overeenstemming met de AVG.">
+  <title>Privacybeleid | domain Innovations</title>
+  <meta name="description" content="Lees ons privacybeleid om te begrijpen hoe domain Innovations uw persoonlijke gegevens verzamelt, gebruikt en beschermt in overeenstemming met de AVG.">
+  <meta property="og:title" content="Privacybeleid | domain Innovations">
+  <meta property="og:description" content="Lees ons privacybeleid om te begrijpen hoe domain Innovations uw persoonlijke gegevens verzamelt, gebruikt en beschermt in overeenstemming met de AVG.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://domain.com/privacy.html">
   <link rel="canonical" href="https://domain.com/privacy.html">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
- </head>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<link rel="stylesheet" href="./header-footer.css">
+</head>
  <body>
-  <header class="l-header">
-   <div class="l-container">
-    <div class="l-header__inner">
-     <div class="c-logo">
-      <a href="/" aria-label="Reiservaring Premium Homepage"> <img class="c-logo__img" src="img/albuquerque-cityscape-logo-hot-air-balloons-mountains-and-sunrise.jpg" alt="Reiservaring Premium logo, travel, adventure, Netherlands" width="150" height="40" loading="eager"> </a>
-     </div>
-     <nav class="c-nav" id="main-nav" aria-label="Hoofdnavigatie">
-      <button class="c-nav__toggle" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Menu openen"><span class="c-nav__toggle-icon">☰</span></button>
-      <ul class="c-nav__list">
-       <li class="c-nav__item"><a class="c-nav__link is-active" href="/" aria-current="page">Home</a></li>
-       <li class="c-nav__item"><a class="c-nav__link" href="/about.html">Over Ons</a></li>
-       <li class="c-nav__item"><a class="c-nav__link" href="/services.html">Diensten</a></li>
-       <li class="c-nav__item"><a class="c-nav__link" href="/careers.html">Carrière</a></li>
-       <li class="c-nav__item"><a class="c-nav__link c-nav__link--cta" href="#contact-form">Contact</a></li>
-      </ul>
-     </nav>
+  <header class="dr-header" aria-label="Main">
+  <div class="dr-header-inner">
+    <div class="dr-header-main">
+      <div class="dr-header-brand">
+        <div class="dr-logo-wrap" aria-label="domain logo">
+          <img class="dr-logo-img" src="img/albuquerque-cityscape-logo-hot-air-balloons-mountains-and-sunrise.jpg" alt="Reiservaring Premium logo, travel, adventure, Netherlands" width="150" height="40" loading="lazy" />
+        </div>
+        <div class="dr-brand-text">domain</div>
+      </div>
+      <button class="dr-nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="dr-nav-toggle-box" aria-hidden="true">
+          <span class="dr-nav-toggle-line dr-nav-toggle-line-1"></span>
+          <span class="dr-nav-toggle-line dr-nav-toggle-line-2"></span>
+        </span>
+      </button>
+      <nav class="dr-nav" aria-label="Primary">
+        <ul class="dr-nav-list">
+          <li class="dr-nav-item"><a class="dr-nav-link" href="./index.html">Home</a></li>
+          <li class="dr-nav-item"><a class="dr-nav-link" href="./about.html">About</a></li>
+          <li class="dr-nav-item"><a class="dr-nav-link" href="./careers.html">Careers</a></li>
+          <li class="dr-nav-item"><a class="dr-nav-link" href="./services.html">Services</a></li>
+        </ul>
+      </nav>
     </div>
-   </div>
-  </header>
+  </div>
+</header>
   <main>
-   <nav class="l-container py-3" aria-label="breadcrumb">
+   <nav class="container py-3" aria-label="breadcrumb">
     <ol class="breadcrumb">
      <li class="breadcrumb-item"><a href="/">Home</a></li>
      <li class="breadcrumb-item active" aria-current="page">Privacybeleid</li>
     </ol>
    </nav>
    <section class="l-section py-4 py-md-5">
-    <div class="l-container">
+    <div class="container">
      <div class="row justify-content-center">
       <div class="col-12 col-lg-10">
        <h1 class="mb-4" data-aos="fade-up">Privacybeleid</h1>
@@ -48,21 +87,21 @@
        <div class="privacy-content" data-aos="fade-up" data-aos-delay="200">
         <section class="mb-5">
          <h2 class="h3 mb-3">1. Inleiding</h2>
-         <p>Welkom bij Northlight Innovations ("wij", "ons", "onze"). Wij respecteren uw privacy en zijn toegewijd aan het beschermen van uw persoonlijke gegevens. Dit privacybeleid legt uit hoe wij uw persoonlijke informatie verzamelen, gebruiken, delen en beschermen wanneer u onze website bezoekt of onze diensten gebruikt.</p>
-         <p>Dit beleid is van toepassing op alle bezoekers en gebruikers van onze website <a href="https://domain.com">domain.com</a> en houdt zich aan de Algemene Verordening Gegevensbescherming (AVG) en andere toepasselijke privacywetgeving in Nederland.</p>
+         <p>Welkom bij domain Innovations ("wij", "ons", "onze"). Wij respecteren uw privacy en zijn toegewijd aan het beschermen van uw persoonlijke gegevens. Dit privacybeleid legt uit hoe wij uw persoonlijke informatie verzamelen, gebruiken, delen en beschermen wanneer u onze website bezoekt of onze diensten gebruikt.</p>
+         <p>Dit beleid is van toepassing op alle bezoekers en gebruikers van onze website <a href="https://domain.com">domain.com</a> en houdt zich aan de domain Verordening Gegevensbescherming (AVG) en andere toepasselijke privacywetgeving in Nederland.</p>
         </section>
         <section class="mb-5">
          <h2 class="h3 mb-3">2. Verantwoordelijke voor gegevensverwerking</h2>
-         <p><strong>Northlight Innovations</strong>
+         <p><strong>domain Innovations</strong>
           <br>
           Strandvägen 29
           <br>
           104 24 Stockholm
           <br>
           Zweden</p>
-         <p><strong>E-mail:</strong> <a href="mailto:info@domain.com">info@domain.com</a>
+         <p><strong>E-mail:</strong> <a href="mailto:booking@domain.com">booking@domain.com</a>
           <br>
-          <strong>Telefoon:</strong> <a href="tel:+46850904000">+46 8 5090 4000</a></p>
+          <strong>Telefoon:</strong> <a href="tel:070-411-4520">+31 70 5213782</a></p>
         </section>
         <section class="mb-5">
          <h2 class="h3 mb-3">3. Welke gegevens verzamelen wij?</h2>
@@ -159,7 +198,7 @@
           <li><strong>Recht van bezwaar:</strong> u kunt bezwaar maken tegen de verwerking van uw gegevens op basis van gerechtvaardigd belang</li>
           <li><strong>Recht om toestemming in te trekken:</strong> als verwerking is gebaseerd op toestemming, kunt u deze op elk moment intrekken</li>
          </ul>
-         <p>Om een van deze rechten uit te oefenen, neem contact met ons op via <a href="mailto:info@domain.com">info@domain.com</a>. Wij zullen binnen 30 dagen reageren op uw verzoek.</p>
+         <p>Om een van deze rechten uit te oefenen, neem contact met ons op via <a href="mailto:booking@domain.com">booking@domain.com</a>. Wij zullen binnen 30 dagen reageren op uw verzoek.</p>
         </section>
         <section class="mb-5">
          <h2 class="h3 mb-3">11. Beveiliging van uw gegevens</h2>
@@ -175,11 +214,11 @@
         </section>
         <section class="mb-5">
          <h2 class="h3 mb-3">12. Gegevens van minderjarigen</h2>
-         <p>Onze diensten zijn niet gericht op personen jonger dan 16 jaar. Wij verzamelen niet bewust persoonlijke gegevens van kinderen onder de 16 jaar. Als u ontdekt dat een kind ons persoonlijke gegevens heeft verstrekt, neem dan contact met ons op zodat wij passende maatregelen kunnen nemen.</p>
+         <p>domain diensten zijn niet gericht op personen jonger dan 16 jaar. Wij verzamelen niet bewust persoonlijke gegevens van kinderen onder de 16 jaar. Als u ontdekt dat een kind ons persoonlijke gegevens heeft verstrekt, neem dan contact met ons op zodat wij passende maatregelen kunnen nemen.</p>
         </section>
         <section class="mb-5">
          <h2 class="h3 mb-3">13. Links naar externe websites</h2>
-         <p>Onze website kan links bevatten naar websites van derden. Wij zijn niet verantwoordelijk voor de privacypraktijken of inhoud van deze externe sites. Wij raden u aan het privacybeleid van elke website die u bezoekt te lezen.</p>
+         <p>domain website kan links bevatten naar websites van derden. Wij zijn niet verantwoordelijk voor de privacypraktijken of inhoud van deze externe sites. Wij raden u aan het privacybeleid van elke website die u bezoekt te lezen.</p>
         </section>
         <section class="mb-5">
          <h2 class="h3 mb-3">14. Wijzigingen in dit privacybeleid</h2>
@@ -188,15 +227,9 @@
         <section class="mb-5">
          <h2 class="h3 mb-3">15. Contact en klachten</h2>
          <p>Als u vragen, zorgen of klachten heeft over dit privacybeleid of onze gegevensverwerkingspraktijken, neem dan contact met ons op:</p>
-         <address><strong>Northlight Innovations</strong>
-          <br>
-          Strandvägen 29
-          <br>
-          104 24 Stockholm, Zweden
-          <br>
-          <strong>E-mail:</strong> <a href="mailto:info@domain.com">info@domain.com</a>
-          <br>
-          <strong>Telefoon:</strong> <a href="tel:+46850904000">+46 8 5090 4000</a></address>
+         <address>The Hague Tower<br>
+Rijswijkseplein 786, Floor 9, Office 914<br>
+2516 LX Den Haag</address>
          <p>U heeft ook het recht om een klacht in te dienen bij de bevoegde toezichthoudende autoriteit:</p>
          <p><strong>Autoriteit Persoonsgegevens (AP)</strong>
           <br>
@@ -218,64 +251,62 @@
     </div>
    </section>
    <section class="l-section py-5" style="background: linear-gradient(135deg, rgba(100, 108, 154, 0.08) 0%, rgba(255, 218, 185, 0.08) 100%);">
-    <div class="l-container">
+    <div class="container">
      <div class="row justify-content-center text-center">
       <div class="col-12 col-md-8" data-aos="fade-up">
        <h2 class="h3 mb-3">Heeft u vragen over uw privacy?</h2>
-       <p class="mb-4">Ons team staat klaar om al uw vragen over gegevensbescherming en privacy te beantwoorden.</p>
-       <a href="mailto:info@domain.com" class="c-button c-button--primary">Neem contact op</a>
+       <p class="mb-4">domain team staat klaar om al uw vragen over gegevensbescherming en privacy te beantwoorden.</p>
+       <a href="mailto:booking@domain.com" class="c-button c-button--primary">Neem contact op</a>
       </div>
      </div>
     </div>
    </section>
   </main>
-  <footer class="l-footer">
-   <div class="l-container">
-    <div class="l-footer__top">
-     <div class="l-footer__column">
-      <div class="c-logo c-logo--footer">
-       <img class="c-logo__img" src="img/vliegtuig-reizen-logo-lijn-kunst-vector-illustratie-sjabloon-pictogram-grafis.jpg" alt="Reiservaring Premium logo" width="150" height="40" loading="lazy">
+  <footer class="dr-footer" aria-label="Footer">
+  <div class="dr-footer-inner">
+    <div class="dr-footer-top">
+      <div class="dr-footer-brand-block">
+        <div class="dr-footer-brand">domain</div>
+        <p class="dr-footer-disclaimer">
+          The information provided on domain.com is for general informational purposes only and does not constitute professional, legal, financial, or investment advice. domain makes no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the content or services on domain.com. Any reliance you place on such information is strictly at your own risk. domain reserves the right to modify, update, or discontinue content or services on domain.com at any time without prior notice.
+        </p>
       </div>
-      <p class="l-footer__description">Uw betrouwbare partner voor onvergetelijke reiservaringen door Nederland en de wereld.</p>
-     </div>
-     <div class="l-footer__column">
-      <h3 class="l-footer__heading">Snelle Links</h3>
-      <nav class="c-nav c-nav--footer" aria-label="Footer navigatie">
-       <ul class="c-nav__list c-nav__list--footer">
-        <li class="c-nav__item"><a class="c-nav__link" href="/">Home</a></li>
-        <li class="c-nav__item"><a class="c-nav__link" href="/about.html">Over Ons</a></li>
-        <li class="c-nav__item"><a class="c-nav__link" href="/services.html">Diensten</a></li>
-        <li class="c-nav__item"><a class="c-nav__link" href="/careers.html">Carrière</a></li>
-       </ul>
-      </nav>
-     </div>
-     <div class="l-footer__column">
-      <h3 class="l-footer__heading">Juridisch</h3>
-      <nav class="c-nav c-nav--footer" aria-label="Juridische links">
-       <ul class="c-nav__list c-nav__list--footer">
-        <li class="c-nav__item"><a class="c-nav__link" href="/privacy.html">Privacyverklaring</a></li>
-        <li class="c-nav__item"><a class="c-nav__link" href="/terms_and_conditions.html">Algemene Voorwaarden</a></li>
-        <li class="c-nav__item"><a class="c-nav__link" href="/terms_of_services.html">Servicevoorwaarden</a></li>
-        <li class="c-nav__item"><a class="c-nav__link" href="/cookie_policy.html">Cookiebeleid</a></li>
-       </ul>
-      </nav>
-     </div>
-     <div class="l-footer__column">
-      <h3 class="l-footer__heading">Contact</h3>
-      <address class="l-footer__address">
-       <p>Strandvägen 29
-        <br>
-        104 24 Stockholm, Zweden</p>
-       <p><a href="tel:+4685090400" class="l-footer__link">+46 8 5090 4000</a></p>
-       <p><a href="mailto:info@domain.com" class="l-footer__link">info@domain.com</a></p>
-      </address>
-     </div>
+      <div class="dr-footer-nav-blocks">
+        <nav class="dr-footer-nav" aria-label="Footer main navigation">
+          <h2 class="dr-footer-heading">Navigate</h2>
+          <ul class="dr-footer-nav-list">
+            <li class="dr-footer-nav-item"><a class="dr-footer-nav-link" href="./index.html">Home</a></li>
+            <li class="dr-footer-nav-item"><a class="dr-footer-nav-link" href="./about.html">About</a></li>
+            <li class="dr-footer-nav-item"><a class="dr-footer-nav-link" href="./careers.html">Careers</a></li>
+            <li class="dr-footer-nav-item"><a class="dr-footer-nav-link" href="./services.html">Services</a></li>
+          </ul>
+        </nav>
+        <nav class="dr-footer-legal" aria-label="Legal">
+          <h2 class="dr-footer-heading">Legal</h2>
+          <ul class="dr-footer-legal-list">
+            <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./cookie_policy.html">Cookie Policy</a></li>
+            <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./privacy.html">Privacy</a></li>
+            <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./services.html">Services</a></li>
+            <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./terms_and_conditions.html">Terms And Conditions</a></li>
+            <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./terms_of_services.html">Terms Of Services</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
-    <div class="l-footer__bottom">
-     <p class="l-footer__copyright">© 2025 Reiservaring Premium. Alle rechten voorbehouden.</p>
+    <div class="dr-footer-bottom">
+      <p class="dr-footer-meta">© <span class="dr-footer-meta-brand">domain</span> — All rights reserved.</p>
     </div>
-   </div>
-  </footer>
+  </div>
+</footer>
   <script src="script.js" defer=""></script>
  
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+if (typeof AOS !== "undefined" && !window.__AOS_INITIALIZED__) {
+  AOS.init({ once: true, duration: 700, easing: "ease-out-cubic" });
+  window.__AOS_INITIALIZED__ = true;
+}
+</script>
+<script src="./header-footer.js"></script>
+<script src="./consent.js"></script>
 </body></html>
